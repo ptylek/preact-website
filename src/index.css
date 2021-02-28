@@ -1,0 +1,8 @@
+html, body {
+	margin: 0;
+	font-family: 'Mulish', sans-serif;
+	font-size: 62.5%;
+	letter-spacing: 0.3px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

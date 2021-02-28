@@ -1,0 +1,21 @@
+{
+  "name": "Pawel Tylek",
+  "short_name": "Pawel Tylek",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#d6d6d6",
+  "theme_color": "#d6d6d6",
+  "icons": [
+    {
+      "src": "/assets/favicons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/favicons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
