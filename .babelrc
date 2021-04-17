@@ -1,8 +1,7 @@
 {
-	"env": {
-		"test": {
-			"presets": [["preact-cli/babel", { "modules": "commonjs" }]],
-			"plugins": ["babel-plugin-styled-components"]
-		}
-	}
+	"presets": ["preact-cli/babel"],
+	"plugins": [
+		"@quickbaseoss/babel-plugin-styled-components-css-namespace",
+		"babel-plugin-styled-components"
+	]
 }

@@ -11,18 +11,15 @@ import { ThemeProvider } from 'styled-components';
 import { themeColors, basicColors } from 'theme/colors';
 
 const colorsArray = Object.values(themeColors);
+const mainColor = colorsArray[Math.floor(Math.random() * colorsArray.length)];
+const theme = {
+	main: mainColor,
+	width: '70rem',
+	header: basicColors.white,
+	border: basicColors.alto,
+};
 
 const App = () => {
-	const mainColor =
-		colorsArray[Math.floor(Math.random() * colorsArray.length)];
-
-	const theme = {
-		main: mainColor,
-		width: '70rem',
-		header: basicColors.white,
-		border: basicColors.alto,
-	};
-
 	return (
 		<div id='app'>
 			<ThemeProvider theme={theme}>
