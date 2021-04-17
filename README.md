@@ -1,12 +1,13 @@
 # ptylek.com - website redesign
 
 Technologies used:
-- Preact
-- styled-components
+
+-   Preact
+-   styled-components
 
 ## Preact CLI Commands
 
-``` bash
+```bash
 # install dependencies
 npm install
 

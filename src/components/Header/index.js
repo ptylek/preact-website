@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import breakpoint from 'theme/breakpoints';
 
 const StyledHeader = styled.header`
-	background: ${props => props.theme.main};
+	background: ${(props) => props.theme.main};
 	padding: 2.5rem 0;
 `;
 
 const StyledTitle = styled.h1`
-	color: ${props => props.theme.header};
+	color: ${(props) => props.theme.header};
 	font-size: 5vw;
 	font-weight: 400;
 	margin: 0 auto;
-	max-width: ${props => props.theme.width};
+	max-width: ${(props) => props.theme.width};
 	padding: 0 1.5rem;
 
 	@media ${breakpoint.tablet} {
@@ -27,9 +27,13 @@ const StyledTitle = styled.h1`
 const Header = () => {
 	return (
 		<StyledHeader>
-			<StyledTitle>Paweł Tylek, frontend developer<br/>based in Kraków, PL</StyledTitle>
+			<StyledTitle>
+				Paweł Tylek, frontend developer
+				<br />
+				based in Kraków, PL
+			</StyledTitle>
 		</StyledHeader>
-	)
+	);
 };
 
 export default Header;

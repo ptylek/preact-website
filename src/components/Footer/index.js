@@ -11,7 +11,7 @@ const Footer = () => {
 		<StyledFooter>
 			<p>Copyright 2021 by Pawel Tylek</p>
 		</StyledFooter>
-	)
+	);
 };
 
 export default Footer;

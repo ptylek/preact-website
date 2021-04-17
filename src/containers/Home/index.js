@@ -15,7 +15,7 @@ import EmailIcon from 'components/icons/Email';
 
 const StyledMain = styled.main`
 	margin: 2.5rem auto;
-	max-width: ${props => props.theme.width};
+	max-width: ${(props) => props.theme.width};
 	padding: 0 1.5rem;
 
 	@media ${breakpoint.laptop} {
@@ -23,7 +23,7 @@ const StyledMain = styled.main`
 	}
 
 	@media ${breakpoint.laptop} {
-		border-left: 1px solid ${props => props.theme.border};
+		border-left: 1px solid ${(props) => props.theme.border};
 		padding: 0 4.5rem;
 	}
 
@@ -114,7 +114,7 @@ const StyledSocials = styled.div`
 	a {
 		&:hover {
 			svg path {
-				fill: ${props => props.theme.main};
+				fill: ${(props) => props.theme.main};
 			}
 		}
 
@@ -123,11 +123,11 @@ const StyledSocials = styled.div`
 				svg {
 					path {
 						fill: none;
-						stroke: ${props => props.theme.main}; 
+						stroke: ${(props) => props.theme.main};
 					}
 
 					rect:nth-child(2) {
-						fill: ${props => props.theme.main};
+						fill: ${(props) => props.theme.main};
 					}
 				}
 			}
@@ -145,11 +145,29 @@ const Home = () => (
 		<p>{content.magento}</p>
 		<StyledMagentoImages>
 			<StyledCertificates>
-				<ImageLink url={links.aceJs.url} src={aceJsBadge} alt={links.aceJs.alt} width='192' height='70'/>
-				<ImageLink url={links.aceFe.url} src={aceFeBadge} alt={links.aceFe.alt} width='192' height='70'/>
+				<ImageLink
+					url={links.aceJs.url}
+					src={aceJsBadge}
+					alt={links.aceJs.alt}
+					width='192'
+					height='70'
+				/>
+				<ImageLink
+					url={links.aceFe.url}
+					src={aceFeBadge}
+					alt={links.aceFe.alt}
+					width='192'
+					height='70'
+				/>
 			</StyledCertificates>
 			<StyledMaintainer>
-				<ImageLink url={links.maintainers.url} src={maintainerIcon} alt={links.maintainers.alt} width='129' height='90'/>
+				<ImageLink
+					url={links.maintainers.url}
+					src={maintainerIcon}
+					alt={links.maintainers.alt}
+					width='129'
+					height='90'
+				/>
 			</StyledMaintainer>
 		</StyledMagentoImages>
 		<p>{content.education}</p>
@@ -157,9 +175,15 @@ const Home = () => (
 		<p>{content.hobby}</p>
 		<p>{content.social}</p>
 		<StyledSocials>
-			<ImageLink url={links.email.url}><EmailIcon alt={links.email.alt}/></ImageLink>
-			<ImageLink url={links.github.url}><GitHubIcon alt={links.github.alt}/></ImageLink>
-			<ImageLink url={links.linkedin.url}><LinkedInIcon alt={links.linkedin.alt}/></ImageLink>
+			<ImageLink url={links.email.url}>
+				<EmailIcon alt={links.email.alt} />
+			</ImageLink>
+			<ImageLink url={links.github.url}>
+				<GitHubIcon alt={links.github.alt} />
+			</ImageLink>
+			<ImageLink url={links.linkedin.url}>
+				<LinkedInIcon alt={links.linkedin.alt} />
+			</ImageLink>
 		</StyledSocials>
 	</StyledMain>
 );

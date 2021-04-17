@@ -1,8 +1,7 @@
-import { useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
 import 'index.css';
 
-import WebsiteHelmet from 'services/helmet'
+import WebsiteHelmet from 'services/helmet';
 
 import Header from 'components/Header';
 import Home from 'containers/Home';
@@ -14,31 +13,28 @@ import { themeColors, basicColors } from 'theme/colors';
 const colorsArray = Object.values(themeColors);
 
 const App = () => {
-	useEffect(() => {
-		console.log('%cThis website was built with Preact and styled-components', 'background: blue; color: white');
-	}, []);
-
-	const mainColor = colorsArray[Math.floor(Math.random() * colorsArray.length)];
+	const mainColor =
+		colorsArray[Math.floor(Math.random() * colorsArray.length)];
 
 	const theme = {
 		main: mainColor,
 		width: '70rem',
 		header: basicColors.white,
-		border: basicColors.alto
+		border: basicColors.alto,
 	};
 
 	return (
-		<div id="app">
+		<div id='app'>
 			<ThemeProvider theme={theme}>
-				<WebsiteHelmet/>
-				<Header/>
+				<WebsiteHelmet />
+				<Header />
 				<Router>
-					<Home default path="/"/>
+					<Home default path='/' />
 				</Router>
-				<Footer/>
+				<Footer />
 			</ThemeProvider>
 		</div>
-	)
-}
+	);
+};
 
 export default App;
