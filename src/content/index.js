@@ -14,13 +14,13 @@ export const content = {
 export const links = {
 	aceJs: {
 		url:
-			'https://www.youracclaim.com/earner/earned/badge/3b816207-80fc-4898-add3-920d9cac9bb4',
+			'https://www.credly.com/earner/earned/badge/3b816207-80fc-4898-add3-920d9cac9bb4',
 		alt:
 			'See Adobe Certified Expert-Magento Commerce JavaScript Developer Badge',
 	},
 	aceFe: {
 		url:
-			'https://www.youracclaim.com/earner/earned/badge/9572504d-58e1-4a65-a700-89d311e596f9',
+			'https://www.credly.com/earner/earned/badge/9572504d-58e1-4a65-a700-89d311e596f9',
 		alt:
 			'See Adobe Certified Expert-Magento Commerce Front-End Developer Badge',
 	},
