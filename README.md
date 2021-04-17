@@ -12,7 +12,7 @@ yarn install
 yarn dev
 
 # build for production
-yarn build --no-prerenderer
+yarn build --no-prerender
 
 # test the production build locally
 yarn serve
