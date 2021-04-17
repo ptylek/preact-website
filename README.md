@@ -1,24 +1,21 @@
-# ptylek.com - website redesign
+# ptylek.com
 
-Technologies used:
-
--   Preact
--   styled-components
+My personal website redesign built using [Preact](https://preactjs.com/) fast 3kB alternative to React and [styled-components](https://styled-components.com/). I used Preact because it is very light and allowed me to create this website using React API. Application's main theme color is selected randomly.
 
 ## Preact CLI Commands
 
 ```bash
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn dev
 
-# build for production with minification
-npm run build
+# build for production
+yarn build --no-prerenderer
 
 # test the production build locally
-npm run serve
+yarn serve
 ```
 
-For detailed explanation on how things work, checkout the [Preact CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md). Built with `--no-prerender` flag.
+For more information, check [Preact CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
